@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       <Nav />
-      <HeroSection />
+      <section className="xl:px-8 sm:px-16">
+        <HeroSection />
+      </section>
     </>
   );
 }
