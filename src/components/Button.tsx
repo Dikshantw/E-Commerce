@@ -1,4 +1,8 @@
-const Button = ({ label, icon }) => {
+interface ButtonProps {
+  label: string;
+  icon: string;
+}
+const Button: React.FC<ButtonProps> = ({ label, icon }) => {
   return (
     <button className="flex justify-center items-center gap-2 px-7 py-4 border text-lg leading-none bg-[#ff6452] rounded-full text-white border-[#ff6452]">
       {label}
