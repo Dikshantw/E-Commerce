@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 import Nav from "./components/Nav";
 import PopularProduct from "./components/PopularProduct";
 import Services from "./components/Services";
+import SpecialOffer from "./components/SpecialOffer";
 import SuperQuality from "./components/SuperQuality";
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
       </section>
       <section className="sm:px-16 px-8 sm:py-24 py-12">
         <Services />
+      </section>
+
+      <section className="sm:px-16 px-8 sm:py-24 py-12">
+        <SpecialOffer />
       </section>
     </>
   );
