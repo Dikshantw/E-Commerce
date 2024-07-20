@@ -1,3 +1,4 @@
+import CustomerReviews from "./components/CustomerReviews";
 import HeroSection from "./components/HeroSection";
 import Nav from "./components/Nav";
 import PopularProduct from "./components/PopularProduct";
@@ -21,9 +22,11 @@ function App() {
       <section className="sm:px-16 px-8 sm:py-24 py-12">
         <Services />
       </section>
-
       <section className="sm:px-16 px-8 sm:py-24 py-12">
         <SpecialOffer />
+      </section>
+      <section className="sm:px-16 px-8 sm:py-24 py-12">
+        <CustomerReviews />
       </section>
     </>
   );
