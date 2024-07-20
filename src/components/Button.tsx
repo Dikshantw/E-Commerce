@@ -4,6 +4,7 @@ interface ButtonProps {
   backgroundColor?: string;
   textColor?: string;
   borderColor?: string;
+  fullWidth?: boolean;
 }
 const Button: React.FC<ButtonProps> = ({
   label,
@@ -11,6 +12,7 @@ const Button: React.FC<ButtonProps> = ({
   backgroundColor,
   textColor,
   borderColor,
+  fullWidth,
 }) => {
   return (
     <button
@@ -18,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
         backgroundColor
           ? `${backgroundColor} ${textColor} ${borderColor}`
           : `bg-[#ff6452] text-white border-[#ff6452]`
-      }  rounded-full`}
+      }  rounded-full ${fullWidth && "w-full"}`}
     >
       {label}
       {icon && (
